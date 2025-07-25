@@ -1,3 +1,48 @@
+// Before/After Slider Animation for Transformation Section
+document.querySelectorAll('.beforeafter__container').forEach(container => {
+    const beforeImg = container.querySelector('.beforeafter__img.before');
+    const afterImg = container.querySelector('.beforeafter__img.after');
+    const slider = container.querySelector('.beforeafter__slider');
+    let isDragging = false;
+
+    function setSlider(x) {
+        const rect = container.getBoundingClientRect();
+        let percent = (x - rect.left) / rect.width;
+        percent = Math.max(0.05, Math.min(0.95, percent));
+        const left = percent * 100;
+        beforeImg.style.clipPath = `inset(0 ${100-left}% 0 0)`;
+        afterImg.style.clipPath = `inset(0 0 0 ${left}%)`;
+        slider.style.left = left + '%';
+    }
+
+    slider.addEventListener('mousedown', e => {
+        isDragging = true;
+        document.body.style.userSelect = 'none';
+    });
+    window.addEventListener('mousemove', e => {
+        if (!isDragging) return;
+        setSlider(e.clientX);
+    });
+    window.addEventListener('mouseup', () => {
+        isDragging = false;
+        document.body.style.userSelect = '';
+    });
+    // Touch support
+    slider.addEventListener('touchstart', e => {
+        isDragging = true;
+        document.body.style.userSelect = 'none';
+    });
+    window.addEventListener('touchmove', e => {
+        if (!isDragging) return;
+        setSlider(e.touches[0].clientX);
+    });
+    window.addEventListener('touchend', () => {
+        isDragging = false;
+        document.body.style.userSelect = '';
+    });
+    // Initial position
+    setSlider(container.getBoundingClientRect().left + container.getBoundingClientRect().width / 2);
+});
 // DOM elements
 const header = document.getElementById('header');
 const navToggle = document.getElementById('nav-toggle');

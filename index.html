@@ -12,6 +12,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <div class="nav__brand">
+                <img src="assets/logo.png" alt="The Settle Hub" class="nav__logo-img" />
                 <h2 class="nav__logo">The Settle Hub</h2>
             </div>
             <div class="nav__menu" id="nav-menu">
@@ -38,15 +39,37 @@
     <section class="hero" id="home">
         <div class="hero__container container">
             <div class="hero__content">
-                <h1 class="hero__title">India's Most Reliable Tech-Enabled Rental Ownership Platform</h1>
-                <p class="hero__subtitle">Asset-backed rentals. Zero cash burn. Guaranteed yields.</p>
+                <h1 class="hero__title">India's Most Reliable, Tech-Enabled Rental Ownership Platform</h1>
+                <p class="hero__subtitle">
+                    We own the homes. You earn the returns. Tenants love the experience.<br>
+                    <span class="hero__tagline">Welcome to TheSettleHub — where real estate meets tech, trust, and transparency.</span>
+                </p>
                 <div class="hero__actions">
-                    <a href="#contact" class="btn btn--primary btn--lg">Start Investing</a>
-                    <a href="#properties" class="btn btn--outline btn--lg">View Properties</a>
+                    <a href="#transformation" class="btn btn--primary btn--lg">Explore Properties</a>
+                    <a href="assets/pitch-deck.pdf" class="btn btn--outline btn--lg" target="_blank">Investor Pitch (PDF)</a>
                 </div>
             </div>
             <div class="hero__visual">
-                <div class="hero__graphic"></div>
+                <div class="hero__mockup">
+                    <div class="browser-mockup fade-in-up">
+                        <div class="browser__header">
+                            <div class="browser__controls">
+                                <span class="control control--close"></span>
+                                <span class="control control--minimize"></span>
+                                <span class="control control--maximize"></span>
+                            </div>
+                            <div class="browser__address-bar">
+                                <div class="address-bar__content">
+                                    <span class="address-bar__icon">🔒</span>
+                                    <span class="address-bar__url">thesettlehub.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="browser__content">
+                            <img src="assets/site_mockup.png" alt="TheSettleHub Platform" class="browser__screenshot" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="hero__pattern"></div>
@@ -77,6 +100,23 @@
                     <h3 class="problem__title">Platform Failures</h3>
                     <p class="problem__description">Asset-light models burn cash with no real security</p>
                     <div class="problem__impact">₹5,000 crore lost annually in unoccupied homes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transition Section -->
+    <section class="transition section">
+        <div class="container">
+            <div class="transition__content fade-in-up">
+                <div class="transition__text">
+                    <h2 class="transition__problems">
+                        🛑 Brokers. 🧱 Broken Rentals. 🏃‍♂️ No Accountability.
+                    </h2>
+                    <div class="transition__divider">↓</div>
+                    <h2 class="transition__solution">
+                        ✅ TheSettleHub = The Full-Stack Fix
+                    </h2>
                 </div>
             </div>
         </div>
@@ -142,7 +182,9 @@
                                 </div>
                                 <div class="property-list">
                                     <div class="property-item">
-                                        <div class="property-image"></div>
+                                        <div class="property-image">
+                                            <img src="assets/property-placeholder.jpg" alt="Property" class="property__img" />
+                                        </div>
                                         <div class="property-details">
                                             <h5>2BHK Koramangala</h5>
                                             <p>₹35,000/month</p>
@@ -161,6 +203,9 @@
                             <div class="phone__content">
                                 <h4>Property Details</h4>
                                 <div class="property-hero"></div>
+                                <div class="property-hero">
+                                    <img src="assets/property-placeholder.jpg" alt="Property Hero" class="property__img" />
+                                </div>
                                 <div class="property-info">
                                     <h5>Luxury 2BHK in Koramangala</h5>
                                     <p class="price">₹35,000/month</p>
@@ -221,26 +266,41 @@
             </div>
             <div class="transformation__content">
                 <div class="transformation__comparison">
-                    <div class="transformation__before fade-in-left">
-                        <h3>Traditional Rentals</h3>
-                        <div class="transformation__image before-image"></div>
-                        <ul class="transformation__features">
-                            <li>❌ Unfurnished spaces</li>
-                            <li>❌ Hidden costs</li>
-                            <li>❌ Poor maintenance</li>
-                            <li>❌ Broker dependency</li>
-                        </ul>
-                    </div>
-                    <div class="transformation__arrow">→</div>
-                    <div class="transformation__after fade-in-right">
-                        <h3>Settle Hub Experience</h3>
-                        <div class="transformation__image after-image"></div>
-                        <ul class="transformation__features">
-                            <li>✅ Fully furnished homes</li>
-                            <li>✅ Transparent pricing</li>
-                            <li>✅ Professional management</li>
-                            <li>✅ Digital convenience</li>
-                        </ul>
+                    <div class="transformation__pairs">
+                        <div class="transformation__property fade-in-up">
+                            <div class="transformation__images">
+                                <div class="transformation__imgwrap">
+                                    <img src="assets/ejipura_house1.jpg" alt="Ejipura House 1 Before" class="transformation__img" />
+                                    <div class="transformation__label">Before</div>
+                                </div>
+                                <div class="transformation__arrow">
+                                    <span class="arrow-line"></span>
+                                    <span class="arrow-head">→</span>
+                                </div>
+                                <div class="transformation__imgwrap">
+                                    <img src="assets/ejipura_house1_mockup.png" alt="Ejipura House 1 After" class="transformation__img" />
+                                    <div class="transformation__label after">After</div>
+                                </div>
+                            </div>
+                            <h4 class="transformation__title">Ejipura House 1</h4>
+                        </div>
+                        <div class="transformation__property fade-in-up">
+                            <div class="transformation__images">
+                                <div class="transformation__imgwrap">
+                                    <img src="assets/ejipura_house2.jpg" alt="Ejipura House 2 Before" class="transformation__img" />
+                                    <div class="transformation__label">Before</div>
+                                </div>
+                                <div class="transformation__arrow">
+                                    <span class="arrow-line"></span>
+                                    <span class="arrow-head">→</span>
+                                </div>
+                                <div class="transformation__imgwrap">
+                                    <img src="assets/ejipura_house2_mockup.png" alt="Ejipura House 2 After" class="transformation__img" />
+                                    <div class="transformation__label after">After</div>
+                                </div>
+                            </div>
+                            <h4 class="transformation__title">Ejipura House 2</h4>
+                        </div>
                     </div>
                 </div>
                 <div class="transformation__highlights fade-in-up">
@@ -384,25 +444,33 @@
             </div>
             <div class="team__grid">
                 <div class="team__card card fade-in-up">
-                    <div class="team__avatar"></div>
+                    <div class="team__avatar">
+                        <img src="assets/aditya-tathagath.jpg" alt="Aditya Tathagath" class="team__img" />
+                    </div>
                     <h4 class="team__name">Aditya Tathagath</h4>
                     <p class="team__role">Co-Founder</p>
                     <p class="team__description">Real estate and tech expertise</p>
                 </div>
                 <div class="team__card card fade-in-up">
-                    <div class="team__avatar"></div>
+                    <div class="team__avatar">
+                        <img src="assets/ajay-patel.jpg" alt="Ajay Patel" class="team__img" />
+                    </div>
                     <h4 class="team__name">Ajay Patel</h4>
                     <p class="team__role">Co-Founder</p>
                     <p class="team__description">Operations and scaling specialist</p>
                 </div>
                 <div class="team__card card fade-in-up">
-                    <div class="team__avatar"></div>
+                    <div class="team__avatar">
+                        <img src="assets/ankit-kumar.jpg" alt="Ankit Kumar" class="team__img" />
+                    </div>
                     <h4 class="team__name">Ankit Kumar</h4>
                     <p class="team__role">Co-Founder</p>
                     <p class="team__description">Technology and product development</p>
                 </div>
                 <div class="team__card card fade-in-up">
-                    <div class="team__avatar"></div>
+                    <div class="team__avatar">
+                        <img src="assets/tanuj-bhatt.jpg" alt="Tanuj Bhatt" class="team__img" />
+                    </div>
                     <h4 class="team__name">Tanuj Bhatt</h4>
                     <p class="team__role">Co-Founder</p>
                     <p class="team__description">Finance and investment strategy</p>
@@ -430,6 +498,7 @@
         <div class="container">
             <div class="footer__content">
                 <div class="footer__brand">
+                    <img src="assets/logo.png" alt="The Settle Hub" class="footer__logo-img" />
                     <h3 class="footer__logo">The Settle Hub</h3>
                     <p class="footer__tagline">Building the future of residential rentals - secure, profitable, digital</p>
                 </div>
@@ -447,14 +516,14 @@
                         <ul>
                             <li><a href="#investment">Investment Info</a></li>
                             <li><a href="#traction">Traction</a></li>
-                            <li><a href="mailto:investors@thesettlehub.com">Investor Relations</a></li>
+                            <li><a href="mailto:foundersoffice@thesettlehub.com">Investor Relations</a></li>
                         </ul>
                     </div>
                     <div class="footer__section">
                         <h4>Contact</h4>
                         <ul>
-                            <li><a href="mailto:contact@thesettlehub.com">contact@thesettlehub.com</a></li>
-                            <li><a href="tel:+91-9999999999">+91-9999999999</a></li>
+                            <li><a href="mailto:contact@thesettlehub.com">foundersoffice@thesettlehub.com</a></li>
+                            <li><a href="tel:+91-9999999999">+91-9481153925</a></li>
                         </ul>
                     </div>
                 </div>
@@ -466,5 +535,24 @@
     </footer>
 
     <script src="app.js"></script>
+    <script>
+    // Mobile nav toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      var navToggle = document.getElementById('nav-toggle');
+      var navList = document.querySelector('.nav__list');
+      if (navToggle && navList) {
+        navToggle.addEventListener('click', function() {
+          navList.classList.toggle('active');
+        });
+      }
+      // Close nav on link click (mobile)
+      var navLinks = document.querySelectorAll('.nav__link');
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          navList.classList.remove('active');
+        });
+      });
+    });
+    </script>
 </body>
 </html>
