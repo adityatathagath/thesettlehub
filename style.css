@@ -1068,10 +1068,34 @@ select.form-control {
   gap: 12px;
 }
 
+/* Logo extraction styles - Professional approach */
 .nav__logo-img {
-  height: 32px;
-  width: auto;
-  object-fit: contain;
+  height: 36px;
+  width: 36px;
+  object-fit: cover;
+  /* Adjust these values based on where the H building is in your image */
+  object-position: center center; /* Change to specific coordinates if needed */
+  
+  /* Method 1: Clip path for precise cropping */
+  clip-path: inset(10% 25% 10% 25%); /* top right bottom left */
+  
+  /* Method 2: Alternative circular crop if building fits better */
+  /* border-radius: 50%; */
+  
+  /* Method 3: Square crop with rounded corners */
+  border-radius: 6px;
+  
+  /* Professional styling */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(139, 115, 85, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.nav__logo-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .nav__logo {
@@ -2070,10 +2094,27 @@ select.form-control {
 }
 
 .footer__logo-img {
-  height: 28px;
-  width: auto;
-  object-fit: contain;
+  height: 32px;
+  width: 32px;
+  object-fit: cover;
+  object-position: center center;
+  
+  /* Crop to show only the building structure part */
+  clip-path: inset(10% 25% 10% 25%); /* top right bottom left */
+  border-radius: 6px;
+  
+  /* Professional styling for footer */
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  
+  /* Keep the white filter for footer contrast */
   filter: brightness(0) invert(1);
+  transition: all 0.3s ease;
+}
+
+.footer__logo-img:hover {
+  transform: scale(1.05);
 }
 
 .footer__logo {
